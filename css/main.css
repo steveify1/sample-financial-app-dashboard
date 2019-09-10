@@ -97,6 +97,7 @@ ul {
 .form-container .form-title {
   margin-bottom: 0.5em;
   text-align: center;
+  color: #222222;
 }
 .form-container .form-title + .form-paragraph {
   text-align: center;
@@ -284,6 +285,14 @@ textarea {
   background-color: #db0e1f;
 }
 
+nav {
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    height: 80px;
+  }
+}
 nav .menu-items .menu-item {
   display: inline-block;
   cursor: pointer;
@@ -450,34 +459,6 @@ a,
   line-height: 1.5;
 }
 
-a:hover #main-nav .menu-item::p {
-  color: red;
-}
-
-#login {
-  margin: 1.5em auto 6em;
-  justify-content: center;
-}
-#login .container > h1 {
-  margin-bottom: 0.5em;
-  text-align: center;
-  color: #3838a3;
-  font-size: 1.8rem;
-}
-#login .container > h1 span {
-  font-weight: 100;
-  font-style: italic;
-}
-#login form input[type=submit] {
-  color: #fff;
-  font-size: 1.2rem;
-}
-@media screen and (min-width: 700px) {
-  #login {
-    width: 95%;
-  }
-}
-
 #main-nav .profile {
   border-radius: 100%;
   height: 30px;
@@ -504,16 +485,40 @@ a:hover #main-nav .menu-item::p {
   object-position: top;
 }
 
+#login {
+  margin: 1.5em auto 6em;
+  justify-content: center;
+}
+#login .container > h1 {
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: #3838a3;
+  font-size: 1.8rem;
+}
+#login .container > h1 span {
+  font-weight: 100;
+  font-style: italic;
+}
+#login form input[type=submit] {
+  color: #fff;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 700px) {
+  #login {
+    width: 95%;
+  }
+}
+
 main {
   min-height: 90vh;
   width: 100%;
   margin: 0em auto;
+  padding: 0 1em;
 }
 
 #customer-tray {
   margin: 2em auto;
   grid-row-gap: 1.5em;
-  padding: 0 1em;
 }
 @media screen and (min-width: 900px) {
   #customer-tray {
