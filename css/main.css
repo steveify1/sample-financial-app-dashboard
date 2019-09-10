@@ -102,6 +102,7 @@ ul {
 .form-container .form-title + .form-paragraph {
   text-align: center;
   margin: 0.5em auto;
+  color: #222222;
 }
 .form-container .form-title + .form-paragraph span {
   color: #92043a;
@@ -320,12 +321,12 @@ nav#main-nav {
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
-  -o-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  -khtml-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  -khtml-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 768px) {
   nav#main-nav {
@@ -339,11 +340,6 @@ nav#main-nav .menu-items {
 nav#main-nav .menu-items .menu-item .balance {
   font-weight: 600;
   color: #3838a3;
-}
-@media screen and (max-width: 767px) {
-  nav#main-nav span.brand-name {
-    display: none;
-  }
 }
 nav#main-nav span.brand-name span {
   color: #db9005;
@@ -360,7 +356,7 @@ nav#main-nav span.brand-name span {
   display: -webkit-flex;
   display: -khtml-flex;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 @media screen and (min-width: 768px) {
   #logo {
@@ -457,6 +453,9 @@ a,
 .app-lightbox .app-modal p {
   margin: 1em 0;
   line-height: 1.5;
+}
+.app-lightbox .app-modal .btn {
+  margin: auto;
 }
 
 #main-nav .profile {
