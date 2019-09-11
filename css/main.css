@@ -478,10 +478,6 @@ a,
   height: 30px;
   width: 30px;
   border: 1px solid rgba(0, 0, 0, 0.13);
-  background: rgba(0, 0, 0, 0), url("../img/online_ad_for_savings.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
   display: -o-flex;
   display: -ms-flex;
@@ -497,12 +493,6 @@ a,
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
-  -khtml-transform: scale(2);
-  transform: scale(2);
 }
 
 #login {
