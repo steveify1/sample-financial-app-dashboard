@@ -427,7 +427,7 @@ a,
 
 .app-modal {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 35%;
   left: 50%;
   -o-transform: translate(-50%, -35%);
