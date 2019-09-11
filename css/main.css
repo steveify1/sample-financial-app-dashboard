@@ -493,6 +493,12 @@ a,
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -khtml-transform: scale(2);
+  transform: scale(2);
 }
 
 #login {
@@ -615,6 +621,11 @@ main {
 }
 #account-menu .menu-items .menu-item:hover {
   color: #db9005;
+}
+#account-menu .menu-items a.menu-item {
+  color: #fff;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 900px) {
   #account-menu {

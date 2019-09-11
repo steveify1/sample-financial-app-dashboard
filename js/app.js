@@ -1,7 +1,7 @@
 var user = {
     username: "ibrahim",
     password: "12345",
-    balance: 12755.39
+    balance: 35015.71
 }
 
 
