@@ -1,6 +1,6 @@
 var user = {
-    username: "ibrahim",
-    password: "12345",
+    username: "Ibcrown",
+    password: "Adebiyi01",
     balance: 35027.51
 }
 
@@ -139,7 +139,7 @@ if (searchForm) {
     var searchIcon = document.querySelector("#Search");
     var searchBox = document.querySelector(".search-form .form-control");
     searchBox.addEventListener("input", function () {
-        if(searchBox.value === "") {
+        if (searchBox.value === "") {
             searchIcon.classList.remove("active");
             return;
         }
@@ -148,13 +148,49 @@ if (searchForm) {
 }
 
 var bal = document.querySelector(".balance");
-if(bal) {
-    bal.textContent  = user.balance.toLocaleString("en-uk", {
+if (bal) {
+    bal.textContent = user.balance.toLocaleString("en-uk", {
         style: "currency",
         currency: "GBP",
 
     });
 
-    
+
 }
 
+
+// Dashboard Menu Control
+var ham = document.querySelector("#hamburger");
+var dashboardMenu = document.querySelector(".dashboard-menu");
+if (ham) {
+    ham.addEventListener("click", function () {
+        dashboardMenu.classList.toggle("active");
+    });
+}
+
+
+// The Modal Poppers
+var poppers = document.querySelectorAll(".popper");
+var appLightbox = document.querySelector(".app-lightbox");
+var closeModalBtn = document.querySelector(".close-modal");
+console.log(closeModalBtn);
+
+if(poppers.length !== 0) {
+    poppers.forEach(function(p) {
+        p.addEventListener("click", function() {
+            appLightbox.classList.add("active");
+        });
+    });
+    
+    // Close Modal Event
+    closeModalBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        console.log("Close modal button clicked");
+        appLightbox.classList.remove("active");
+    });
+    
+    appLightbox.addEventListener("click", function() {
+        console.log("app lightbox clicked");
+        appLightbox.classList.remove("active");
+    });
+}
