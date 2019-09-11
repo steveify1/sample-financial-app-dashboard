@@ -1,7 +1,7 @@
 var user = {
-    username: "Ibcrown",
-    password: "Adebiyi01",
-    balance: 35027.51
+    username: "ibrahim",
+    password: "12345",
+    balance: 12755.39
 }
 
 
@@ -186,8 +186,6 @@ var poppers = document.querySelectorAll(".popper");
 var appLightbox = document.querySelector(".app-lightbox");
 var appModal = document.querySelector(".app-modal");
 var closeModalBtn = document.querySelector(".close-modal");
-console.log(closeModalBtn);
-
 if(poppers.length !== 0) {
     poppers.forEach(function(p) {
         p.addEventListener("click", function() {
