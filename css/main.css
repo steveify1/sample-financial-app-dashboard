@@ -421,7 +421,12 @@ a,
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.app-lightbox .app-modal {
+.app-lightbox.active {
+  display: block;
+}
+
+.app-modal {
+  display: none;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -443,7 +448,7 @@ a,
   border-radius: 5px;
   padding: 0.875em;
 }
-.app-lightbox .app-modal .brand {
+.app-modal .brand {
   display: -o-flex;
   display: -ms-flex;
   display: -moz-flex;
@@ -453,18 +458,18 @@ a,
   justify-content: center;
   margin-bottom: 1em;
 }
-.app-lightbox .app-modal h3 {
+.app-modal h3 {
   text-align: center;
   text-decoration: underline;
 }
-.app-lightbox .app-modal p {
+.app-modal p {
   margin: 1em 0;
   line-height: 1.5;
 }
-.app-lightbox .app-modal .btn {
+.app-modal .btn {
   margin: auto;
 }
-.app-lightbox.active {
+.app-modal.active {
   display: block;
 }
 
