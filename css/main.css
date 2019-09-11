@@ -667,18 +667,18 @@ main {
 #account-services #service-list {
   color: #222222;
   min-height: 90vh;
-  grid-row-gap: 1.2em;
+  grid-row-gap: 2.5em;
   grid-column-gap: 1em;
 }
 #account-services #service-list .service {
   height: 200px;
   background-color: #fff;
-  -o-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-  -khtml-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   -moz-border-radius: 5px;

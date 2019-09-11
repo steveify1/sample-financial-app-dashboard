@@ -186,8 +186,6 @@ var poppers = document.querySelectorAll(".popper");
 var appLightbox = document.querySelector(".app-lightbox");
 var appModal = document.querySelector(".app-modal");
 var closeModalBtn = document.querySelector(".close-modal");
-console.log(closeModalBtn);
-
 if(poppers.length !== 0) {
     poppers.forEach(function(p) {
         p.addEventListener("click", function() {
