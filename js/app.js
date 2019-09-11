@@ -169,28 +169,40 @@ if (ham) {
 }
 
 
+function makeActive(elements) {
+    elements.forEach(function(e) {
+        e.classList.add("active");
+    });
+}
+
+function removeActive(elements) {
+    elements.forEach(function(e) {
+        e.classList.remove("active");
+    });
+}
+
 // The Modal Poppers
 var poppers = document.querySelectorAll(".popper");
 var appLightbox = document.querySelector(".app-lightbox");
+var appModal = document.querySelector(".app-modal");
 var closeModalBtn = document.querySelector(".close-modal");
 console.log(closeModalBtn);
 
 if(poppers.length !== 0) {
     poppers.forEach(function(p) {
         p.addEventListener("click", function() {
-            appLightbox.classList.add("active");
+            makeActive([appLightbox, appModal]);
         });
     });
     
     // Close Modal Event
     closeModalBtn.addEventListener("click", function(e) {
         e.preventDefault();
-        console.log("Close modal button clicked");
-        appLightbox.classList.remove("active");
+        removeActive([appLightbox, appModal]);
     });
     
-    appLightbox.addEventListener("click", function() {
-        console.log("app lightbox clicked");
-        appLightbox.classList.remove("active");
+    appLightbox.addEventListener("click", function(e) {
+        e.stopImmediatePropagation();
+        removeActive([appLightbox, appModal]);
     });
 }
