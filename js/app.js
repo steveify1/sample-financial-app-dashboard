@@ -147,6 +147,7 @@ if (searchForm) {
     });
 }
 
+// Formatting the balance to our local currency
 var bal = document.querySelector(".balance");
 if (bal) {
     bal.textContent = user.balance.toLocaleString("en-NG", {
