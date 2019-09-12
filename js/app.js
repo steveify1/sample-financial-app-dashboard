@@ -1,5 +1,5 @@
 var user = {
-    username: "ibrahim",
+    username: "test",
     password: "12345",
     balance: 12755.39
 }
@@ -149,9 +149,9 @@ if (searchForm) {
 
 var bal = document.querySelector(".balance");
 if (bal) {
-    bal.textContent = user.balance.toLocaleString("en-uk", {
+    bal.textContent = user.balance.toLocaleString("en-NG", {
         style: "currency",
-        currency: "GBP",
+        currency: "NGN",
 
     });
 
