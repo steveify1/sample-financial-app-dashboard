@@ -147,12 +147,12 @@ if (searchForm) {
     });
 }
 
+// Formatting the account balance
 var bal = document.querySelector(".balance");
 if (bal) {
-    bal.textContent = user.balance.toLocaleString("en-uk", {
+    bal.textContent = user.balance.toLocaleString("en-NG", {
         style: "currency",
-        currency: "GBP",
-
+        currency: "NGN",
     });
 
 
